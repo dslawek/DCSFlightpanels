@@ -3277,13 +3277,13 @@
             {
                 if (_currentUpperRadioMode == CurrentMi8RadioMode.R863_PRESET || _currentLowerRadioMode == CurrentMi8RadioMode.R863_PRESET)
                 {
+                    _r863PresetDialSkipper++;
                     if (_r863PresetDialSkipper > SKIP_CONSTANT)
                     {
                         _r863PresetDialSkipper = 0;
                         return false;
                     }
 
-                    _r863PresetDialSkipper++;
                     return true;
                 }
             }
